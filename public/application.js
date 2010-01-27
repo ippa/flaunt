@@ -6,6 +6,8 @@
  *
  * author: ippa
  *
+ * Initially made for Shrug meetup 28 januare 2010.
+ *
  */
 $(function() {
 
@@ -19,7 +21,7 @@ $(function() {
     update_progress();
   });
 
-  $(document).keypress(function (e) {
+  $(document).keyup(function (e) {
     if (e.keyCode == 32 || e.keyCode == 39) {
       next();
       return false

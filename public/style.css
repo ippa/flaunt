@@ -9,7 +9,7 @@ h2 { font: 8em arial; color: purple; }
 blockquote { font-size: 30px; font-style: bold; color: green; }
 a,a:hover,a:visited { color: #eeeeee; }
 
-.slide { text-align: left; padding: 0px; margin: 0px; }
+.slide { text-align: left; padding: 0px; margin: 0px; padding-left: 20px; }
 .slide ul { }
 .slide li { font: 5em arial; color: #81FF5B; padding-bottom: 20px; }
 
