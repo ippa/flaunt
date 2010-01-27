@@ -3,13 +3,13 @@ body { background: black; font: 11px verdana; }
 
 h1,h2,h3 { color: white; font: arial; margin: 0px; text-align: center; }
 
-h1 { font: 10em arial; color: #FF2FBC; }
-h2 { font: 8em arial; color: purple; }
+h1 { font: 8em arial; color: #FF2FBC; }
+h2 { font: 6em arial; color: purple; }
 
 blockquote { font-size: 30px; font-style: bold; color: green; }
 a,a:hover,a:visited { color: #eeeeee; }
 
-.slide { text-align: left; padding: 0px; margin: 0px; padding-left: 20px; }
+.slide { text-align: left; padding: 0px; margin: 0px; padding-left: 10px; margin-top: 0px; }
 .slide ul { }
 .slide li { font: 5em arial; color: #81FF5B; padding-bottom: 20px; }
 
