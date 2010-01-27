@@ -5,6 +5,9 @@ Simple slide based presentation "framework" in ruby/jquery.
 Keep your whole presentation in one file, but still get slide-functionality.
 Currently works with HTML.
 
+== INSTALL
+
+
 == TODO
 - Support redcloth/bluecloth
 
