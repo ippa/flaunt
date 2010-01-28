@@ -1,10 +1,10 @@
 <div class="slide">
   <h1>Oh hai.</h1>
   <ul>
-    <li>Frilans med Perl,PHP,Mysql, Affiliate Marketing 10 år</li>
-    <li>Hittade Ruby för ~4 år sen, Rails ett halvår senare</li>
+    <li>Frilans 10 år, affiliate marketing</li>
+    <li>Hittade Ruby för ~4-5 år sen, Rails nåt halvår senare</li>
     <li>Har på tok för många hobby rails projekt på gång. mmawiz.com, äggklocka.se, minpojke.se, minflicka.se, minvovve.se, rubylicio.us, lyricslord.com, mmawiz.com etc.
-    <!-- <li>Jobbat mkt med sökmotoroptimering. "generic viagra" made me an indie game dev!</li> -->
+    <li>Jobbat mkt med sökmotoroptimering. "generic viagra" made me an indie game dev!</li>
   </ul>
 </div>
 
@@ -12,10 +12,26 @@
   <h1>2D Spelutveckling i Ruby</h1>
   <ul>
     <li>Kortare genomgång av spel libs</li>
-    <li>Lite Chingu-kod</li>
     <li>Spelutveckling är en hobby, finns säkert duktigare folk i publiken!</li>
     <li>Presentationen finns online på <a href="http://ippa.se:1234">ippa.se:1234</a>
   </ul>
+</div>
+
+<div class="slide">
+  <h1>Enklast möjliga spel ram</h1>
+  <blockquote>
+    class Game &lsaquo; Gosu::Window
+    <br><br>
+    &#160;def initialize<br>
+      &#160;&#160;super(800, 600,60)   # &#160;&#160;width, height, fps<br>
+      &#160;&#160;@game_objects.push(Player.new)<br>
+      &#160;end<br><br>
+    &#160;def update;  @game_objects.each { |o| o.update }; end<br><br>
+  
+    &#160;def draw; @game_objects.each { |o| o.draw }; end<br><br>
+      end<br><br>
+    Game.new.run
+  </blockquote>
 </div>
 
 <div class="slide">
@@ -33,15 +49,15 @@
   <h1>Ramverk - Gamebox</h1>
   <ul>
     <li><a href="http://github.com/shawn42/gamebox">Gamebox</a>. Bygger på Rubygame</li>
-    <li><a href="http://github.com/shawn42">Shawn42</a></li>
-    <li>Generators, Actor, Scene and behaivors</li>
+    <li><a href="http://github.com/shawn42">Shawn42</a> @ #rubygame (freenode)</li>
+    <li>rails-liknande generators, actor, scene and behaivors</li>
   </ul>
 </div>
 
 <div class="slide">
   <h1>Ramverk - Jemini</h1>
   <ul>
-    <li><a href="http://jemini.kenai.com/">Jemeni</a> - Jruby framework av <a href="http://github.com/LoganBarnett/">Logan Barnett</a></li>
+    <li><a href="http://jemini.kenai.com/">Jemini</a> - JRuby framework av <a href="http://github.com/LoganBarnett/">Logan Barnett</a></li>
     <li>Bygger på <a href="http://slick.cokeandcode.com/">Slick</a> och <a href="http://www.cokeandcode.com/phys2d/">Phys2D</a>
     <li>OpenGL 2D för snabb GFX</a>
     <li>Cross platform, lägg till / ta bort "behaivors" runtime</li>
@@ -55,8 +71,8 @@
     <li><a href="http://libgosu.org/">Gosu</a> - Tyskt och minimalistiskt</li>
     <li>C++ och Ruby</li>
     <li>OpenGL accelererat, textures as sprites, max 1022 x 1022 pixels</li>
-    <li>Blixtsnabb GFX, skalning, rotering och fading</li>
-    <li>Ljud via fmod, stödjer ogg, wav etc.</li>
+    <li>Blixtsnabb GFX, skalning, rotering, zorder och fading. Ogg/wav stöd.</li>
+    <li>@image.draw_rot(x,y,z,scale_x,scale_y,angle,color,mode)</li>
     <li>Enkel deployment. iPhone deployment (bara C++ dock).</li>
   </ul>
 </div>
@@ -65,12 +81,38 @@
   <h1>Ramverk - Chingu</h1>
   <ul>
     <li><a href="http://ippa.se/chingu">Chingu</a> - <a href="http://github.com/ippa/chingu">github</a>. Bygger på Gosu.</li>
-    <li>GameStateManager, GameObject, Animation, traits</li>
-    <li>Traits (modules): timer, collision detection, viewport etc...</li>
+    <li>GameState, BasicGameObject, GameObject, Animation, Parallax, Text</li>
+    <li>Traits (modules) addar logik till GameState och GameObject: timer, collision detection, viewport etc...</li>
     <li>Online high scores via <a href="http://www.gamercv.com/">GamerCV.com</a></li>
-    <li>Relativt aktiv utveckling, många exempel, några slutförda spel</li>
   </ul>
 </div>
+
+<div class="slide">
+  <h1>Chingu</h1>
+  <ul>
+  <li>GameObject.new(:image => Image["player.png"], :x => 100, :y => 200)</a>
+  <li>Railsinspirerat: GameObject.new vs GameObject.create</li>
+  <li>Enemy.all</li>
+  <li>Enemy.each_collision(Bullet) do |enemy, bullet|</li>
+  <li></li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>Chingu Ram</h1>
+  <blockquote>
+  class Game &lsaquo; Chingu::Window
+    <br><br>
+    &#160;def initialize<br>
+      &#160;&#160;# width, height, fps<br>
+      &#160;&#160;super(800, 600,60)<br>
+      &#160;&#160;Player.create   # Det skapade objektet hamnar i "game_objects"<br>
+      &#160;end<br><br>
+      end<br><br>
+    Game.new.run
+  </blockquote>
+</div>
+
 
 <div class="slide">
   <h1>Verktyg</h1>

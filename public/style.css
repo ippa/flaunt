@@ -6,7 +6,7 @@ h1,h2,h3 { color: white; font: arial; margin: 0px; text-align: center; }
 h1 { font: 6em arial; color: #FF2FBC; }
 h2 { font: 4em arial; color: purple; }
 
-blockquote { font-size: 30px; font-style: bold; color: green; }
+blockquote { font: 3em courier; font-style: bold; color: #81FF5B; }
 a,a:hover,a:visited { color: #eeeeee; }
 
 .slide { text-align: left; padding: 0px; margin: 0px; padding-left: 10px; margin-top: 0px; }
