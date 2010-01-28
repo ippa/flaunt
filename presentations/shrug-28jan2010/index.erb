@@ -124,7 +124,7 @@
 </div>
 
 <div class="slide">
-  <h1>Deployment</h1>
+  <h1>Deployment (Win32)</h1>
   <ul>
     <li><a href="http://www.erikveen.dds.nl/rubyscript2exe/">Rubyscript2exe</a></li>
     <li><a href="http://exerb.sourceforge.jp/index.en.html">Exerb</a>
@@ -133,11 +133,12 @@
 </div>
 
 <div class="slide">
-  <h1>Ocra</h1>
+  <h1>Ocra (Win32)</h1>
   <ul>
     <li>Ocra mitt_spel.rb lib\*</li>
     <li>Ocra autodetekterar till 99% gems och DLLs</li>
     <li>En Ocra-skapas exe packas upp till tmp dir med full ruby-miljö, sen exekveras mitt_spel.rb. Så tänk på dina paths!</li>
+    <li>GAMEROOT = File.dirname(File.expand_path($0)); ENV['PATH'] = File.join(GAMEROOT,"lib") + ";" + ENV['PATH']</li>
   </ul>
 </div>
 
