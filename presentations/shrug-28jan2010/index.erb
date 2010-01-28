@@ -26,9 +26,9 @@
       &#160;&#160;super(800, 600,60)   # &#160;&#160;width, height, fps<br>
       &#160;&#160;@game_objects.push(Player.new)<br>
       &#160;end<br><br>
-    &#160;def update;  @game_objects.each { |o| o.update }; end<br><br>
+    &#160;def update;  @game_objects.each { |o| o.update }; end<br>
   
-    &#160;def draw; @game_objects.each { |o| o.draw }; end<br><br>
+    &#160;def draw; @game_objects.each { |o| o.draw }; end<br>
       end<br><br>
     Game.new.run
   </blockquote>
@@ -71,7 +71,7 @@
     <li><a href="http://libgosu.org/">Gosu</a> - Tyskt och minimalistiskt</li>
     <li>C++ och Ruby</li>
     <li>OpenGL accelererat, textures as sprites, max 1022 x 1022 pixels</li>
-    <li>Blixtsnabb GFX, skalning, rotering, zorder och fading. Ogg/wav stöd.</li>
+    <li>Snabb GFX, skalning, rotering, zorder, fading. Ogg/wav stöd.</li>
     <li>@image.draw_rot(x,y,z,scale_x,scale_y,angle,color,mode)</li>
     <li>Enkel deployment. iPhone deployment (bara C++ dock).</li>
   </ul>
