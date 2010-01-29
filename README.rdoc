@@ -3,11 +3,17 @@ http://github.com/ippa/flaunt
 
 Simple slide based presentation "framework" in ruby/jquery.
 Keep your whole presentation in one file, but still get slide-functionality.
-Currently works with HTML.
+Support erb, haml, textile and markdown.
 
 == INSTALL
-
+git clone http://github.com/ippa/flaunt
+cd flaunt/presentations
+mdkir my_presentation
+edit my_presentation/index.erb  # ... or index.haml or index.textile or index.md, see bundled examples.
+cd ..
+rackup                # and point your browser to http://localhost:9292/ (or replace "localhost" with the real host)
 
 == TODO
-- Support redcloth/bluecloth
+- is there a better way to support invidual slides when using <div class="slide">content</div> ?
+- slide-height should follow when browser resizes font-size
 
