@@ -6,27 +6,23 @@
  *
  * author: ippa
  *
- * Initially made for Shrug meetup 28 januare 2010.
+ * Initially made for Shrug meetup 28 jan 2010.
  *
  */
 $(function() {
 
   /* Each window resize, set new heights for the slides */
-  $(window).resize(function() {
-    update_slide_height();
-  });
+  $(window).resize(function() { update_slide_height(); });
   
   /* If user scrolls manually, we need to update the progress box */
-  $(window).scroll(function() {
-    update_progress();
-  });
+  $(window).scroll(function() { update_progress(); });
 
   $(document).keyup(function (e) {
-    if (e.keyCode == 32 || e.keyCode == 39) {
+    if (e.keyCode == 32 || e.keyCode == 39) { /* Right or Space */
       next();
       return false
     }
-    if (e.keyCode == 37) {
+    if (e.keyCode == 37) {  /* Left */
       prev();
       return false
     }

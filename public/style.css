@@ -13,11 +13,8 @@ a,a:hover,a:visited { color: #eeeeee; }
 .slide ul { }
 .slide li { font: 4em arial; color: #81FF5B; padding-bottom: 20px; }
 
-#progress_box {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  color: white;
-  font: 4em verdana;
-  padding: 5px;
-}
+#progress_box { position: fixed; top: 0px; right: 0px; color: white; font: 4em verdana; padding: 5px; }
+
+#menu ul li { list-style-type: none; text-align: center; }
+#menu ul li a { font: 6em arial; color: blue; }
+

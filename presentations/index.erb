@@ -1,0 +1,16 @@
+<div id="home">
+  
+  <h1>Available Presentations</h1>
+  <div id="menu">
+    <ul>
+    <% @dirs.each do |dir| %>
+      <li><a href="/<%= dir %>"><%= dir %></a></li>
+    <% end %>
+    </ul>
+  </div>
+
+</div>
+
+<style type="text/css">
+  #progress_box { display: none; }
+</style>
