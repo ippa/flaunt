@@ -15,3 +15,5 @@ a,a:hover,a:visited { color: #eeeeee; }
 #menu ul li { list-style-type: none; text-align: center; }
 #menu ul li a { font: 6em arial; color: blue; }
 
+#info { position: absolute; top: 0; left; 0; color: #aaaaaa; }
+#info a { color: #cccccc; }
