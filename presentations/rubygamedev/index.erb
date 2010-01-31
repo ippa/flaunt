@@ -1,22 +1,21 @@
-<div class="slide">
   <h1>Oh hai.</h1>
   <ul>
     <li>Frilans 10 år, affiliate marketing</li>
     <li>Hittade Ruby för ~4-5 år sen, Rails nåt halvår senare</li>
     <li>Har på tok för många hobby rails projekt på gång. mmawiz.com, äggklocka.se, minpojke.se, minflicka.se, minvovve.se, rubylicio.us, lyricslord.com, mmawiz.com etc.
   </ul>
-</div>
 
-<div class="slide">
+  <hr />
+
   <h1>2D Spelutveckling i Ruby</h1>
   <ul>
     <li>Kortare genomgång av spel libs</li>
     <li>Spelutveckling är en hobby, finns säkert duktigare folk i publiken!</li>
     <li>Presentationen finns online på <a href="http://ippa.se:1234">ippa.se:1234</a>
   </ul>
-</div>
 
-<div class="slide">
+  <hr />
+
   <h1>Enklast möjliga spel ram</h1>
   <code>
     class Game &lsaquo; Gosu::Window
@@ -31,9 +30,9 @@
       end<br><br>
     Game.new.run
   </code>
-</div>
 
-<div class="slide">
+  <hr />
+
   <h1>Spelbibliotek - Rubygame</h1>
   <ul>
     <li>Rubygame 2.x ( <a href="http://rubygame.org/">http://rubygame.org/</a> )</li>
@@ -42,18 +41,18 @@
     <li>Jacius @ #rubygame (freenode)</li>
     <li>3.0 in the works, lutar åt OpenGL</li>
   </ul>
-</div>
 
-<div class="slide">
+  <hr />
+
   <h1>Ramverk - Gamebox</h1>
   <ul>
     <li><a href="http://github.com/shawn42/gamebox">Gamebox</a>. Bygger på Rubygame</li>
     <li><a href="http://github.com/shawn42">Shawn42</a> @ #rubygame (freenode)</li>
     <li>rails-liknande generators, actor, scene and behaivors</li>
   </ul>
-</div>
 
-<div class="slide">
+  <hr />
+  
   <h1>Ramverk - Jemini</h1>
   <ul>
     <li><a href="http://jemini.kenai.com/">Jemini</a> - JRuby framework av <a href="http://github.com/LoganBarnett/">Logan Barnett</a></li>
@@ -62,9 +61,9 @@
     <li>Cross platform, lägg till / ta bort "behaivors" runtime</li>
     <li>Aldrig använt, men intressant ur deployment synvinkel (framtida browser deployment? android?)</li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Spelbibliotek - Gosu</h1>
   <ul>
     <li><a href="http://libgosu.org/">Gosu</a> - Tyskt och minimalistiskt</li>
@@ -74,9 +73,9 @@
     <li>@image.draw_rot(x,y,z,scale_x,scale_y,angle,color,mode)</li>
     <li>Enkel deployment. iPhone deployment (bara C++ dock).</li>
   </ul>
-</div>
-
-<div class="slide">
+  
+  <hr />
+  
   <h1>Ramverk - Chingu</h1>
   <ul>
     <li><a href="http://ippa.se/chingu">Chingu</a> - <a href="http://github.com/ippa/chingu">github</a>. Bygger på Gosu.</li>
@@ -84,9 +83,9 @@
     <li>Traits (modules) addar logik till GameState och GameObject: timer, collision detection, viewport etc...</li>
     <li>Online high scores via <a href="http://www.gamercv.com/">GamerCV.com</a></li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Chingu</h1>
   <ul>
   <li>GameObject.new(:image => Image["player.png"], :x => 100, :y => 200)</a>
@@ -95,9 +94,9 @@
   <li>Enemy.each_collision(Bullet) do |enemy, bullet|</li>
   <li></li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Chingu Ram</h1>
   <code>
   class Game &lsaquo; Chingu::Window
@@ -110,28 +109,27 @@
       end<br><br>
     Game.new.run
   </code>
-</div>
+  
+  <hr />
 
-
-<div class="slide">
   <h1>Verktyg</h1>
   <ul>
     <li>Ljud: <a href="http://www.drpetter.se/project_sfxr.html">sfxr</a>, <a href="http://www.freesound.org/">freesound</a>, <a href="http://audacity.sourceforge.net/">Audacity</a></li>
     <li>Sprites: <a href="http://www.humanbalance.net/gale/us/download.html">GraphicsGale</a>, <a href="http://tilestudio.sourceforge.net/">Tile Studio</a></li>
     <li>Stödlib (gems): <a href="http://banisterfiend.wordpress.com/2008/08/23/texplay-an-image-manipulation-tool-for-ruby-and-gosu/">TexPlay</a>, <a href="http://banisterfiend.wordpress.com/2009/10/14/the-devil-image-library-for-ruby/">DevIL</a>, <a href="http://code.google.com/p/chipmunk-physics/">Chipmunk</a></li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Deployment (Win32)</h1>
   <ul>
     <li><a href="http://www.erikveen.dds.nl/rubyscript2exe/">Rubyscript2exe</a></li>
     <li><a href="http://exerb.sourceforge.jp/index.en.html">Exerb</a>
     <li><a href="http://github.com/larsch/ocra/">Ocra</a> (gem install ocra)</li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Ocra (Win32)</h1>
   <ul>
     <li>Ocra mitt_spel.rb lib\*</li>
@@ -139,9 +137,9 @@
     <li>En Ocra-skapas exe packas upp till tmp dir med full ruby-miljö, sen exekveras mitt_spel.rb. Så tänk på dina paths!</li>
     <li>GAMEROOT = File.dirname(File.expand_path($0)); ENV['PATH'] = File.join(GAMEROOT,"lib") + ";" + ENV['PATH']</li>
   </ul>
-</div>
+  
+  <hr />
 
-<div class="slide">
   <h1>Community</h1>
   <ul>
     <li>#gosu, #rubygame @ freenode. #ludumdare @ afternet</li>
@@ -149,9 +147,9 @@
     <li>Ludum Dare 48-timmars speltävling. några ggr om året. ~130 deltagare.</li>
     <li>Rubyspel i Top5</li>
   </ul>
-</div>
-
-<div class="slide">
+  
+  <hr />
+  
   <h1>URLz</h1>
   <ul>
     <li><a href="http://ippa.se/gaming">ippa.se/gaming</a> - div minigames jag meckat ihop</li>
@@ -160,4 +158,3 @@
     <li><a href="http://github.com/FooBarWidget/rubystein">Rubystein</a>. 3D via ett 2D-framework. Från mod_rack-killarna. Ruby / Gosu.</li>
     <li>Hela presentationen finns online: <a href="http://ippa.se:1234/">ippa.se:1234/</a>
   </ul>
-</div>

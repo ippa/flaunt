@@ -5,7 +5,7 @@ Minimalistic, simple slide based presentation "framework" powered by Sinatra 1.0
 Supports ERB, Haml, Markdown, Textile and all other formats that Sinatra (through Tilt) supports.
 
 Keep your whole presentation in one file, but still get slide-functionality with progress meeter etc.
-Make your presentation however you want, but separate each "slide" with a <hr> and Flaunt can do it's thing!
+Do your presentation however you want, but separate each "slide" with a <hr> and Flaunt can do it's thing!
 
 
 == INSTALL
@@ -15,6 +15,74 @@ Make your presentation however you want, but separate each "slide" with a <hr> a
   edit my_presentation/index.erb  # ... or index.haml or index.textile or index.md, see bundled examples.
   cd ..
   rackup                # and point your browser to http://localhost:9292/ (or replace "localhost" with the real host)
+
+
+== EXAMPLE PRESENTATIONS
+
+=== Textile
+
+  h1. Flaunt does Textile
+  * foo
+  * foo
+  * foo
+
+  <hr />
+
+  h1. Page #2
+  * bar
+  * bar
+  * bar
+
+=== Markdown
+  
+  Flaunt does Markdown
+  ====================
+  * foo
+  * foo
+  * foo
+
+  <hr />
+
+  Page #2
+  ====================
+  * bar
+  * bar
+  * bar
+
+=== HAML
+  %h1= "Flaunt does HAML"
+  %ul
+    %li= "foo" 
+    %li= "foo"
+    %li= "foo"
+  
+  %hr
+
+  %h1= "Page #2"
+  %ul
+    %li= "bar" 
+    %li= "bar"
+    %li= "bar"
+
+=== ORDINARY HTML / ERB
+  <h1>Flaunt does HTML</h1>
+  <ul>
+    <li>foo</li>
+    <li>foo</li>
+    <li>foo</li>
+  </ul>
+  
+  <hr />
+
+  <h1>Page #2</h1>
+  <ul>
+    <li>bar</li>
+    <li>bar</li>
+    <li>bar</li>
+  </ul>
+
+
+The only thing You need to remember is to separate each slide by a <hr /> so Flaunt can detect and show one slide at a time.
 
 == TODO
 - slide-height should follow when browser resizes font-size
