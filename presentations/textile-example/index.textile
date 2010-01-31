@@ -1,7 +1,12 @@
-<div class="slide">
 h1. Flaunt does Textile
-* test
-* test
-* test
-</div>
+* foo
+* foo
+* foo
+
+<hr />
+
+h1. Page #2
+* bar
+* bar
+* bar
 

@@ -1,6 +1,6 @@
 /*
  *
- * Flaunt 0.1 - http://github.com/ippa/flaunt
+ * Flaunt 0.2 - http://github.com/ippa/flaunt
  *
  * Minimalistic one-file presentations with sinatra, html and jquery.
  *
@@ -31,12 +31,19 @@ $(function() {
   update_progress();
 
   update_slide_height();
+
 });
+
+function create_slides()  {
+  $("hr").each(function(){
+    $(this).precss('height', slide_height() );
+  });
+}
 
 /* Resize all slides to fit the current window, this is done when loaded + on window resize */
 function update_slide_height() {
   $(".slide").each(function(){
-    $(this).height( slide_height() );
+    $(this).css('height', slide_height() );
   });
 }
 

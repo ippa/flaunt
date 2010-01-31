@@ -1,9 +1,12 @@
 = FLAUNT
 http://github.com/ippa/flaunt
 
-Minimalistic, simple slide based presentation "framework" with sinatra/jquery.
-Keep your whole presentation in one file, but still get slide-functionality!
-Support erb, haml, textile and markdown.
+Minimalistic, simple slide based presentation "framework" powered by Sinatra 1.0+ and jQuery!
+Supports ERB, Haml, Markdown, Textile and all other formats that Sinatra (through Tilt) supports.
+
+Keep your whole presentation in one file, but still get slide-functionality with progress meeter etc.
+Make your presentation however you want, but separate each "slide" with a <hr> and Flaunt can do it's thing!
+
 
 == INSTALL
   git clone http://github.com/ippa/flaunt
@@ -14,6 +17,5 @@ Support erb, haml, textile and markdown.
   rackup                # and point your browser to http://localhost:9292/ (or replace "localhost" with the real host)
 
 == TODO
-- is there a better way to support invidual slides when using <div class="slide">content</div> ?
 - slide-height should follow when browser resizes font-size
 
