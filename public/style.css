@@ -1,19 +1,23 @@
 body,html,li { padding: 0px; margin: 0px; color: white; text-align: left; }
-body { background: black; font: 11px verdana; }
+body { background: black; }
+html { font-size: 1em; font-family: arial; }
 
 h1,h2,h3 { color: white; font: arial; margin: 0px; text-align: center; }
-h1 { font: 6em arial; color: #FF2FBC; }
-h2 { font: 4em arial; color: purple; }
-code { font-size: 3em; font-style: bold; color: #81FF5B; }
+h1 { font-size: 4em; color: #FF2FBC; }
+h2 { font-size: 3em; color: purple; }
+code { font-size: 2em; font-style: bold; color: #81FF5B; }
 a,a:hover,a:visited { color: #eeeeee; }
 
-.slide { text-align: left; padding: 0px; margin: 0px; padding-left: 10px; margin-top: 0px; }
-.slide ul { }
-.slide li { font: 4em arial; color: #81FF5B; padding-bottom: 20px; }
-
-#progress_box { position: fixed; top: 0px; right: 0px; color: white; font: 4em verdana; padding: 5px; }
 #menu ul li { list-style-type: none; text-align: center; }
 #menu ul li a { font: 6em arial; color: blue; }
 
-#info { position: absolute; top: 0; left; 0; color: #aaaaaa; }
-#info a { color: #cccccc; }
+.slide { text-align: left; padding: 0px; margin: 0px; padding-left: 10px; margin-top: 0px; width: 99%; overflow: hidden; }
+.slide ul { }
+.slide li { font: 3em arial; color: #81FF5B; padding-bottom: 20px; }
+
+#status { position: fixed; top: 0px; right: 0px; color: white; font: 20px arial; padding: 5px; text-align: right; }
+#status img { border: 0px; }
+#progress_box { color: white; font: 40px verdana; }
+
+#info { color: #777777; font: 9px verdana; padding-bottom: 10px; }
+#info a { color: #777777; }

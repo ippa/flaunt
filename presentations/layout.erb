@@ -11,9 +11,22 @@
   </head>
                                       
   <body>
-    <div id="progress_box">0 / 0</div>
+
+    <div id="status">
+      <div id="info">Made with <a href="http://ippa.se/flaunt">Flaunt</a></div>
+
+
+      <a href="#" class="increaseFont"><img src="/001_01.png" /></a>&#160;
+      <a href="#" class="decreaseFont"><img src="/001_02.png" /></a>&#160;
+      <a href="#" class="resetFont"><img src="/001_09.png" /></a>
+      
+      <div id="progress_box">0 / 0</div>
+      
+    </div>
+
+
     <%= yield %>
-    <div id="info">Made with <a href="http://ippa.se/flaunt">Flaunt</a></div>
+
   </body>
 
 </html>
