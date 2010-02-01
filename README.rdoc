@@ -1,4 +1,7 @@
 = FLAUNT
+
+http://ippa.se/flaunt
+
 http://github.com/ippa/flaunt
 
 Minimalistic, simple slide based presentation "framework" powered by Sinatra 1.0+ and jQuery!
@@ -8,13 +11,25 @@ Keep your whole presentation in one file, but still get slide-functionality with
 Do your presentation however you want, but separate each "slide" with a <hr> and Flaunt can do it's thing!
 
 
-== INSTALL
+== SPEED INSTALL
   git clone http://github.com/ippa/flaunt
   cd flaunt/presentations
   mdkir my_presentation
   edit my_presentation/index.erb  # ... or index.haml or index.textile or index.md, see bundled examples.
   cd ..
   rackup                # and point your browser to http://localhost:9292/ (or replace "localhost" with the real host)
+
+
+== INSTALL AS A MOUNTABLE SINATRA APP
+Flaunt is a mountable sinatra app, which opens up for easy hosting of all your presentations in one place.
+For example, in your main config.ru put:
+  
+  require 'flaunt/application'    # This requires the flaunt-dir to be put in the same dir as your main config.ru
+  map "/presentations" do         # All url's starting with /presentations will be handled by flaunt
+    run Flaunt
+  end
+
+Now you'll get a <a href="http://ippa.se/presentations">list like this of your presentations under www.yourdomain.com/presentations</a>.
 
 
 == EXAMPLE PRESENTATIONS

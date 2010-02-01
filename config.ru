@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 require 'rubygems'
-require 'sinatra'
+gem 'sinatra', '> 1.0'
 require 'application'
 run Flaunt
 
