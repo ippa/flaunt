@@ -9,7 +9,7 @@ Keep your whole presentation in one file, but still get slide-functionality with
 
 
 * Supports just about every template engine there is
-* Just put <hr> in your presentation and the content between them will become separate slides each one filling the whole browser.
+* Just put <hr> in your presentation and the content between them will become separate slides each one filling the whole browser window
 * Rack-mountable, summon all your presentations on one page like this: http://ippa.se/presentations
 * Dynamic text-resizing
 
@@ -23,7 +23,7 @@ Keep your whole presentation in one file, but still get slide-functionality with
   rackup                # and point your browser to http://localhost:9292/ (or replace "localhost" with the real host)
 
 
-== INSTALL AS A MOUNTABLE SINATRA APP
+== MOUNT AS A RACK/SINATRA APP
 Flaunt is a mountable sinatra app, which opens up for easy hosting of all your presentations in one place.
 For example, in your main config.ru put:
   
