@@ -15,7 +15,7 @@ class Flaunt < Sinatra::Base
   get '/:presentation' do
     @base = env["SCRIPT_NAME"] || "/"
     views = File.join(File.dirname(__FILE__), 'presentations')  
-    @title = "#{params[:presentation]} - [ Made with http://github.com/ippa/flaunt ]"
+    @title = "#{params[:presentation]} - [ Made with http://ippa.se/flaunt ]"
 
     template = Dir["#{views}/#{params[:presentation]}/index.*"].first
     content = Tilt.new(template).render
