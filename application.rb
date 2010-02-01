@@ -1,19 +1,19 @@
 #!/usr/bin/ruby
-#require 'rubygems'
-#require 'sinatra'
-#require 'sinatra/base'
 
 class Flaunt < Sinatra::Base
   @root_dir = ::File.dirname(__FILE__)
   set :root,        @root_dir
   set :views,       ::File.join(@root_dir, 'presentations')
 
-  get '/' do
-    @dirs = Dir["presentations/*"].select { |file| File.directory?(file) }.map { |dir| File.basename(dir) }
+  get '/?' do
+    @base = env["SCRIPT_NAME"] || "/"
+    views = File.join(File.dirname(__FILE__), 'presentations')  
+    @dirs = Dir["#{views}/*"].select { |file| File.directory?(file) }.map { |dir| File.basename(dir) }
     erb :"index"
   end
 
   get '/:presentation' do
+    @base = env["SCRIPT_NAME"] || "/"
     views = File.join(File.dirname(__FILE__), 'presentations')  
     @title = "#{params[:presentation]} - [ Made with http://github.com/ippa/flaunt ]"
 

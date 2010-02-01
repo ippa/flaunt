@@ -4,7 +4,7 @@
   <div id="menu">
     <ul>
     <% @dirs.each do |dir| %>
-      <li><a href="/<%= dir %>"><%= dir %></a></li>
+      <li><a href="<%= @base %>/<%= dir %>"><%= dir %></a></li>
     <% end %>
     </ul>
   </div>
@@ -12,5 +12,5 @@
 </div>
 
 <style type="text/css">
-  #progress_box { display: none; }
+  #status { display: none; }
 </style>
