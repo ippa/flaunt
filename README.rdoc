@@ -1,8 +1,7 @@
 = FLAUNT
 
-http://ippa.se/flaunt
-
-http://github.com/ippa/flaunt
+HOMEPAGE: http://ippa.se/flaunt
+REPO AND DOCS: http://github.com/ippa/flaunt
 
 Minimalistic, simple slide based presentation "framework" powered by Sinatra 1.0+ and jQuery!
 Supports ERB, Haml, Markdown, Textile and all other formats that Sinatra (through Tilt) supports.
@@ -29,7 +28,7 @@ For example, in your main config.ru put:
     run Flaunt
   end
 
-Now you'll get a <a href="http://ippa.se/presentations">list like this of your presentations under www.yourdomain.com/presentations</a>.
+Now you'll get a list like this on your domain: http://ippa.se/presentations
 
 
 == EXAMPLE PRESENTATIONS
