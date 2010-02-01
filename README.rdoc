@@ -98,6 +98,3 @@ Now you'll get a list like this on your domain: http://ippa.se/presentations
 
 The only thing You need to remember is to separate each slide by a <hr /> so Flaunt can detect and show one slide at a time.
 
-== TODO
-- slide-height should follow when browser resizes font-size
-
