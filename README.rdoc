@@ -5,9 +5,13 @@ REPO AND DOCS: http://github.com/ippa/flaunt
 
 Minimalistic, simple slide based presentation "framework" powered by Sinatra 1.0+ and jQuery!
 Supports ERB, Haml, Markdown, Textile and all other formats that Sinatra (through Tilt) supports.
-
 Keep your whole presentation in one file, but still get slide-functionality with progress meeter etc.
-Do your presentation however you want, but separate each "slide" with a <hr> and Flaunt can do it's thing!
+
+
+* Supports just about every template engine there is
+* Just put <hr> in your presentation and the content between them will become separate slides each one filling the whole browser.
+* Rack-mountable, summon all your presentations on one page like this: http://ippa.se/presentations
+* Dynamic text-resizing
 
 
 == SPEED INSTALL
