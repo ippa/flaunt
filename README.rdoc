@@ -12,7 +12,7 @@ Keep your whole presentation in one file, but still get slide-functionality with
 * Just put <hr> in your presentation and the content between them will become separate slides each one filling the whole browser window
 * Rack-mountable, summon all your presentations on one page like this: http://ippa.se/presentations
 * Dynamic text-resizing
-
+* Left / right arrow keys to change slide. + / - to resize presentation text.
 
 == SPEED INSTALL
   git clone http://github.com/ippa/flaunt
