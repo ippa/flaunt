@@ -17,7 +17,7 @@ $(function() {
   /* If user scrolls manually, we need to update the progress box */
   $(window).scroll(function() { update_progress(); });
 
-  $(document).keyup(function (e) {
+  $(document).keydown(function (e) {
     if (e.keyCode == 32 || e.keyCode == 39) { /* Right or Space */
       next();
       return false
@@ -26,6 +26,15 @@ $(function() {
       prev();
       return false
     }
+    if (e.keyCode == 107) {  /* Plus */
+      increase_font();
+      return false
+    }
+    if (e.keyCode == 109) {  /* Minus */
+      decrease_font();
+      return false
+    }
+
   });
   
   update_progress();
@@ -40,23 +49,31 @@ $(function() {
     
   // Increase Font Size
   $(".increaseFont").click(function(){
-    var currentFontSize = $('html').css('font-size');
-    var currentFontSizeNum = parseFloat(currentFontSize, 10);
-    var newFontSize = currentFontSizeNum*1.2;
-    $('html').css('font-size', newFontSize);
+    increase_font();
     return false;
   });
 
   // Decrease
   $(".decreaseFont").click(function(){
-    var currentFontSize = $('html').css('font-size');
-    var currentFontSizeNum = parseFloat(currentFontSize, 10);
-    var newFontSize = currentFontSizeNum*0.8;
-    $('html').css('font-size', newFontSize);
+    decrease_font();
     return false;
   });
 
 });
+
+function decrease_font() {
+  var currentFontSize = $('html').css('font-size');
+  var currentFontSizeNum = parseFloat(currentFontSize, 10);
+  var newFontSize = currentFontSizeNum*0.8;
+  $('html').css('font-size', newFontSize); 
+}
+
+function increase_font() {
+  var currentFontSize = $('html').css('font-size');
+  var currentFontSizeNum = parseFloat(currentFontSize, 10);
+  var newFontSize = currentFontSizeNum*1.2;
+  $('html').css('font-size', newFontSize);
+}
 
 function create_slides()  {
   $("hr").each(function(){
